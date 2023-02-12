@@ -7,7 +7,7 @@
 	-->
 
 	<Chain id="Oscillator1">
-		<var name="pitch" default="60" mapin="33, 80" steps="0,2,3,5,7,9,10,12" convert="MIDI->frequency"></var>
+		<var name="pitch" default="60" mapin="33, 80" steps="0,2,3.5,5,7,8.5,10,12" convert="MIDI->frequency"></var>
 		<var name="brightness" default="1000" mapin="50,10000" curve="3"></var>
 		<var name="volume" default="0" mapin="-30, 10" convert="dB->power"></var>
 		<var name="panning" default="0" mapin="-1,1"></var>
@@ -21,7 +21,7 @@
 	</Chain>
 
 	<Chain id="Oscillator2">
-		<var name="pitch" default="60" mapin="33, 80" steps="0,2,3,5,7,9,10,12" convert="MIDI->frequency"></var>
+		<var name="pitch" default="60" mapin="33, 80" steps="0,2,3.5,5,7,8.5,10,12" convert="MIDI->frequency"></var>
 		<var name="brightness" default="1000" mapin="50,10000" curve="3"></var>
 		<var name="volume" default="0" mapin="-30, 10" convert="dB->power"></var>
 		<var name="panning" default="0" mapin="-1,1"></var>
@@ -35,7 +35,7 @@
 	</Chain>
 
 	<Chain id="Oscillator3">
-		<var name="pitch" default="60" mapin="33, 80" steps="0,2,3,5,7,9,10,12" convert="MIDI->frequency"></var>
+		<var name="pitch" default="60" mapin="33, 80" steps="0,2,3.5,5,7,8.5,10,12" convert="MIDI->frequency"></var>
 		<var name="brightness" default="1000" mapin="50,10000" curve="3"></var>
 		<var name="volume" default="0" mapin="-30, 10" convert="dB->power"></var>
 		<var name="panning" default="0" mapin="-1,1"></var>
@@ -49,7 +49,7 @@
 	</Chain>
 
 	<Chain id="Oscillator4">
-		<var name="pitch" default="60" mapin="33, 80" steps="0,2,3,5,7,9,10,12" convert="MIDI->frequency"></var>
+		<var name="pitch" default="60" mapin="33, 80" steps="0,2,3.5,5,7,8.5,10,12" convert="MIDI->frequency"></var>
 		<var name="brightness" default="1000" mapin="50,10000" curve="3"></var>
 		<var name="volume" default="0" mapin="-30, 10" convert="dB->power"></var>
 		<var name="panning" default="0" mapin="-1,1"></var>
