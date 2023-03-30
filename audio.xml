@@ -260,7 +260,7 @@ Whatever är lika med kurvan. Välj start=velocity.crest etc för att få triggn
 		<var name="panning" default="0" mapin="-1,1"></var>
 
 		<AmbientAudio src="audio/Vn_Low_A.mp3" crossFade="0.1" output=".filter"></AmbientAudio>
-		<BiquadFilterNode class="filter" type="bandpass" frequency="$overtone" Q="50" transitionTime="60"></BiquadFilterNode>
+		<BiquadFilterNode class="filter" type="bandpass" frequency="$overtone" Q="50" transitionTime="20"></BiquadFilterNode>
 		<GainNode gain="+20dB"></GainNode>
 		<GainNode gain="$volume"></GainNode>
 		<StereoPannerNode pan="$panning"></StereoPannerNode>
@@ -272,7 +272,7 @@ Whatever är lika med kurvan. Välj start=velocity.crest etc för att få triggn
 		<var name="panning" default="0" mapin="-1,1"></var>
 
 		<AmbientAudio src="audio/Vn_Low_G.mp3" crossFade="0.1" output=".filter"></AmbientAudio>
-		<BiquadFilterNode class="filter" type="bandpass" frequency="$overtone" Q="50" transitionTime="60"></BiquadFilterNode>
+		<BiquadFilterNode class="filter" type="bandpass" frequency="$overtone" Q="50" transitionTime="20"></BiquadFilterNode>
 		<GainNode gain="+28dB"></GainNode>
 		<GainNode gain="$volume"></GainNode>
 		<StereoPannerNode pan="$panning"></StereoPannerNode>
@@ -284,7 +284,7 @@ Whatever är lika med kurvan. Välj start=velocity.crest etc för att få triggn
 		<var name="panning" default="0" mapin="-1,1"></var>
 
 		<AmbientAudio src="audio/Vn_Low_E.mp3" crossFade="0.1" output=".filter"></AmbientAudio>
-		<BiquadFilterNode class="filter" type="bandpass" frequency="$overtone" Q="50" transitionTime="60"></BiquadFilterNode>
+		<BiquadFilterNode class="filter" type="bandpass" frequency="$overtone" Q="50" transitionTime="20"></BiquadFilterNode>
 		<GainNode gain="+20dB"></GainNode>
 		<GainNode gain="$volume"></GainNode>
 		<StereoPannerNode pan="$panning"></StereoPannerNode>
@@ -296,7 +296,7 @@ Whatever är lika med kurvan. Välj start=velocity.crest etc för att få triggn
 		<var name="panning" default="0" mapin="-1,1"></var>
 
 		<AmbientAudio src="audio/Vn_Low_D.mp3" crossFade="0.1" output=".filter"></AmbientAudio>
-		<BiquadFilterNode class="filter" type="bandpass" frequency="$overtone" Q="50" transitionTime="60"></BiquadFilterNode>
+		<BiquadFilterNode class="filter" type="bandpass" frequency="$overtone" Q="50" transitionTime="20"></BiquadFilterNode>
 		<GainNode gain="+20dB"></GainNode>
 		<GainNode gain="$volume"></GainNode>
 		<StereoPannerNode pan="$panning"></StereoPannerNode>
