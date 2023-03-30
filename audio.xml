@@ -13,7 +13,7 @@
 		<var name="panning" default="0" mapin="-1,1"></var>
 
 
-		<OscillatorNode type="sawtooth" frequency="$pitch" transitionTime="60"></OscillatorNode>
+		<OscillatorNode type="sawtooth" frequency="$pitch" transitionTime="10"></OscillatorNode>
 		<BiquadFilterNode frequency="$brightness"></BiquadFilterNode>
 		<GainNode gain="-1dB"></GainNode>
 		<GainNode class="sub" gain="$volume"></GainNode>
@@ -27,7 +27,7 @@
 		<var name="panning" default="0" mapin="-1,1"></var>
 
 
-		<OscillatorNode type="sawtooth" frequency="$pitch" transitionTime="60"></OscillatorNode>
+		<OscillatorNode type="sawtooth" frequency="$pitch" transitionTime="10"></OscillatorNode>
 		<BiquadFilterNode frequency="$brightness"></BiquadFilterNode>
 		<GainNode gain="-1dB"></GainNode>
 		<GainNode class="sub" gain="$volume"></GainNode>
@@ -41,7 +41,7 @@
 		<var name="panning" default="0" mapin="-1,1"></var>
 
 
-		<OscillatorNode type="sawtooth" frequency="$pitch" transitionTime="60"></OscillatorNode>
+		<OscillatorNode type="sawtooth" frequency="$pitch" transitionTime="10"></OscillatorNode>
 		<BiquadFilterNode frequency="$brightness"></BiquadFilterNode>
 		<GainNode gain="-1dB"></GainNode>
 		<GainNode class="sub" gain="$volume"></GainNode>
@@ -55,7 +55,7 @@
 		<var name="panning" default="0" mapin="-1,1"></var>
 
 
-		<OscillatorNode type="sawtooth" frequency="$pitch" transitionTime="60"></OscillatorNode>
+		<OscillatorNode type="sawtooth" frequency="$pitch" transitionTime="10"></OscillatorNode>
 		<BiquadFilterNode frequency="$brightness"></BiquadFilterNode>
 		<GainNode gain="-1dB"></GainNode>
 		<GainNode class="sub" gain="$volume"></GainNode>
