@@ -202,9 +202,13 @@ class DataManager {
 
     this.muteAllAudioObjects();
     this.audioConfig.audioObjects.forEach(audioObject => {
-      if(audioObject.level == 2){
+      if(audioObject.level == 2 && audioObject.name != audioObject.type){
+        // initially mute all audio generators
+        // NOTE: Really bad solution. Requires non-variable objects to not
+        // have an id or classname.
         audioObject.target.disconnect();
-        // audioObject.target.gain = 0;
+        // audioObject.target.fadeOut();
+
       }
     });
 
@@ -1016,7 +1020,8 @@ class GUI {
 
     if(this._elements.newBtn){
       this._elements.newBtn.addEventListener("click", e => {
-        this._dataManager.new();
+        window.location = window.location.origin + window.location.pathname;
+        // this._dataManager.new();
       });
     }
 
@@ -1807,6 +1812,11 @@ class GUI {
       }
       let includeOption = filter.length ? filter.filter(item => item == option.type || item == option.level || option.level == 1)[0] : true;
       if(level == 1 && option.target instanceof AudioParam){includeOption = false} // omit AudioParameter from top level AudioObjects
+      if(option.type){
+        if(option.name == option.type && option.level == 2){
+          includeOption = false;
+        } // Omit WAXML objects without id or classname
+      }
 
       if(includeOption){
         curOptions.push(option);
@@ -1980,6 +1990,8 @@ var gui = new GUI({
 
 
 webAudioXML.addEventListener("inited", e => {
+  waxml.master._node.connect(waxml.querySelector("#dry").input);
+
   let dataManager = new DataManager("data.csv", webAudioXML, gui);
   dataManager.addEventListener("inited", e => {
     // init settings
@@ -2139,6 +2151,7 @@ class Variable {
     let target = obj.target;
     target.disconnect(0);
     target.connect(this.output);
+    // target.fadeIn();
     this._targetAudioObject = obj;
   }
 
