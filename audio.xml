@@ -312,6 +312,13 @@ Whatever är lika med kurvan. Välj start=velocity.crest etc för att få triggn
 		<StereoPannerNode pan="$panning"></StereoPannerNode>
 	</Chain>
 
+	
+	<Mixer gain="0dB" transitionTime="0" output="audioContext.destination">
+		<Send id="dry" outputbus="#reverb" gain="6dB"/>
+		<ConvolverNode id="reverb" src="audio/convolution-kungasalen.wav" />
+	</Mixer>
+	
+
 	<!-- brus från stråke på kanten på fiol, behöver testas mer.-->
 
 		<!-- <Chain id="Ambient_VnKantBrus">
