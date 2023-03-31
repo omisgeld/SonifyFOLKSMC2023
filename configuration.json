@@ -7,7 +7,7 @@
             "id": 16,
             "rowID": "22",
             "gain": 0.17639999999999997,
-            "pan": -0.5,
+            "pan": -0.2,
             "state": true,
             "color": "#3FB4A6",
             "audioObjectID": 82,
@@ -42,7 +42,7 @@
             "name": "Andreas:LeftFoot_Speed",
             "id": 17,
             "rowID": "8",
-            "gain": 0.0841,
+            "gain": 0.12249999999999998,
             "pan": -1.2,
             "state": true,
             "color": "#D4E09B",
@@ -138,8 +138,8 @@
             "name": "Olof:Rankle_Yvel",
             "id": 19,
             "rowID": "25",
-            "gain": 0.11560000000000002,
-            "pan": 0.4,
+            "gain": 0.16809999999999997,
+            "pan": 0.1,
             "state": true,
             "color": "#F19C79",
             "audioObjectID": 117,
@@ -171,34 +171,10 @@
             ]
         },
         {
-            "name": "Andreas:BackTop_Speed",
-            "id": 20,
-            "rowID": "2",
-            "gain": 0.3364,
-            "pan": 0,
-            "state": true,
-            "color": "#A44A3F",
-            "audioObjectID": 334,
-            "mappings": [
-                {
-                    "parameterID": 336,
-                    "inputLow": 0,
-                    "inputHigh": 1,
-                    "outputLow": 76,
-                    "outputHigh": 87.9,
-                    "relInputLow": 0,
-                    "relInputHigh": 1,
-                    "invert": false,
-                    "state": true,
-                    "id": 68
-                }
-            ]
-        },
-        {
             "name": "Andreas:RightFoot_Speed",
             "id": 21,
             "rowID": "11",
-            "gain": 0.10890000000000001,
+            "gain": 0.09,
             "pan": 2.4,
             "state": true,
             "color": "#B75E38",
@@ -359,6 +335,30 @@
                     "invert": true,
                     "state": true,
                     "id": 82
+                }
+            ]
+        },
+        {
+            "name": "Andreas:BackTop_Y",
+            "id": 23,
+            "rowID": "0",
+            "gain": 0.25,
+            "pan": 0,
+            "state": true,
+            "color": "#819B25",
+            "audioObjectID": 317,
+            "mappings": [
+                {
+                    "parameterID": 319,
+                    "inputLow": 148,
+                    "inputHigh": 151.9,
+                    "outputLow": 82.7,
+                    "outputHigh": 90.2,
+                    "relInputLow": 0.24441217610832414,
+                    "relInputHigh": 0.7837030045205721,
+                    "invert": false,
+                    "state": true,
+                    "id": 88
                 }
             ]
         }
